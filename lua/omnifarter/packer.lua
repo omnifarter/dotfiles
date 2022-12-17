@@ -24,7 +24,6 @@ return require('packer').startup(function(use)
       ts_update()
     end,
   }
-  use('theprimeagen/harpoon')
   use('mbbill/undotree') -- allows high level control of file versioning
   use('tpope/vim-fugitive') -- Git helper
   use { -- lsp-zero
