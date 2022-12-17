@@ -5,7 +5,6 @@ vim.o.background = 'dark'
 -- vim.o.background = 'light'
 
 local c = require('vscode.colors')
-c.bg='#00000000'
 
 require('vscode').setup({
     -- Enable transparent background
