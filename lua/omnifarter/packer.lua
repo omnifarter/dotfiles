@@ -33,7 +33,6 @@ return require('packer').startup(function(use)
       {'neovim/nvim-lspconfig'},
       {'williamboman/mason.nvim'},
       {'williamboman/mason-lspconfig.nvim'},
-
       -- Autocompletion
       {'hrsh7th/nvim-cmp'},
       {'hrsh7th/cmp-buffer'},
@@ -45,6 +44,9 @@ return require('packer').startup(function(use)
       -- Snippets
       {'L3MON4D3/LuaSnip'},
       {'rafamadriz/friendly-snippets'},
+
+      -- linter
+      {'jose-elias-alvarez/null-ls.nvim'}
     }
   }
   use {

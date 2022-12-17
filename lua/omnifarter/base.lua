@@ -4,3 +4,4 @@ vim.opt.wrap = false
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
+vim.opt.ignorecase = true
