@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
     end,
   }
   use('mbbill/undotree') -- allows high level control of file versioning
-  use('tpope/vim-fugitive') -- Git helper
+  use('kdheepak/lazygit.nvim') -- lazygit
   use { -- lsp-zero
     'VonHeikemen/lsp-zero.nvim',
     requires = {
@@ -61,7 +61,7 @@ return require('packer').startup(function(use)
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
-  use('windwp/nvim-ts-autotag')
+        use('windwp/nvim-ts-autotag')
 end)
 
 
