@@ -1,6 +1,8 @@
 ## Overview
 This repository contains all my dotfiles that I use for my workflow. 
 
+![screenshot](./assets/screenshot.png)
+
 ## Installation
 #### Recommended Install
 Use the corresponding .sh scripts for a straightforward installation.
@@ -49,6 +51,7 @@ stow nvim
 | `<`            | remove indent (visual mode)             |
 | `=`            | auto-tab (visual mode)                  |
 
+
 #### File explorer (Nvim-Tree)
 
 | Key Press      | Description                               |
@@ -71,3 +74,19 @@ stow nvim
 | `p`            | pull                                    |
 | `P`            | push                                    |
 | `c`            | commit                                  |
+
+#### Tmux
+
+| Key Press       | Description                             |
+| --------------  | --------------------------------------- |
+| `<C-t>`         | prefix                                  |
+| `<prefix>-`     | horizontal split                        |
+| `<prefix>`      | vertical split                          |
+| `<Alt-Arrow>`   | move between windows                    |
+| `<prefix>,`     | rename window                           |
+| `<prefix>c`     | create window                           |
+| `<prefix>n`     | next window                             |
+| `<prefix>p`     | previous window                         |
+| `<prefix><C-S>` | save state                              |
+
+
