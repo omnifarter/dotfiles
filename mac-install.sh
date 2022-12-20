@@ -48,8 +48,12 @@ brew_install() {
     do
       brew install "$package"
     done
+
 }
 
+tpm_install() {
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+}
 create_sym_link() {
   cd "$HOME/dotfiles"
   stow tmux
@@ -60,4 +64,5 @@ create_sym_link() {
 zsh_install
 iterm_install
 brew_install
+tpm_install
 create_sym_link
