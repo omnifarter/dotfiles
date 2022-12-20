@@ -89,6 +89,13 @@ return require('packer').startup(function(use)
       })
     end
   })
+  -- install without yarn or npm
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
+  use('dhruvasagar/vim-table-mode')
   if packer_bootstrap then
     require('packer').sync()
   end

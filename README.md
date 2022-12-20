@@ -1,55 +1,73 @@
-# My workflow setup with neovim
+## Overview
+This repository contains all my dotfiles that I use for my workflow. 
 
-## Prerequisites
+## Installation
+#### Recommended Install
+Use the corresponding .sh scripts for a straightforward installation.
 
+#### Manual Install
+Download and configure the following tools:
 1. Neovim
 2. Patched Fonts
 3. Lazy Git
 4. RipGrep
+6. zig
+7. tmux
 
-## Mappings
+use `stow` to create sym links for nvim, tmux and zsh.
+Example usage:
 
-### Navigation
+```
+stow nvim
+```
 
-`<C-p>` find file
-`<S-f>` find occurrence in PWE
-`<leader>e` toggles file explorer
-`<leader>fb` opens file buffer
+## Cheatsheet
 
-### Workflow
+#### Navigation
 
-`<leader>gd` Go to definition
-`gl` go to lint
-`K` hover
+| Key Press      | Description              |
+| -------------- | -----------------------  |
+| `<C-p>`        | find file                |
+| `<S-f>`        | find occurence in PWD    |
+| `<leader>e`    | toggles file explorer    |
+| `<leader>fb`   | opens file buffer        |
+| `<C-Arrow>`    | navigate between windows |
+| `<S-Arrow>`    | split window             |
 
-In normal:
-`gcc` comment code line
-`gbc` block comment code line
+#### Workflow
 
-In visual:
-`gb` block comment
-`gc` line comment
-`>` indent
-'<' remove indent
-`=` auto-tabbing
+| Key Press      | Description                             |
+| -------------- | --------------------------------------- |
+| `<leader>gd`   | Go to definition                        |
+| `gl`           | Go to lint                              |
+| `K`            | Hover                                   |
+| `gcc`          | comment code line (normal mode)         |
+| `gbc`          | block comment code line (normal mode)   |
+| `gb`           | block comment (visual mode)             |
+| 'gc'           | line comment (visual mode)              |
+| `>`            | indent (visual mode)                    |
+| `<`            | remove indent (visual mode)             |
+| `=`            | auto-tab (visual mode)                  |
 
-### File explorer
+#### File explorer (Nvim-Tree)
 
-`a` create new file
-`c` copy file
-`p` paste file
-'d' delete file
+| Key Press      | Description                               |
+| -------------- | ---------------------------------------   |
+| `a`            | create new file (trailing `/` for folder) |
+| `m`            | marks file/folder                         |
+| `bmv`          | move marked items                         |
+| `c`            | copy file                                 |
+| `p`            | pase file                                 |
+| `d`            | delete file/folder                        |
 
-### Windows
 
-`<C-Arrow>` navigate between windows
-`<S-Arrow>` split window
+#### Git
 
-### Git
-
-`<leader>gg` opens lazy Git
-`a` stage/unstage all
-'<SPACE>' toggle staging for file
-`p` pull
-`P` push
-'c' commit
+| Key Press      | Description                             |
+| -------------- | --------------------------------------- |
+| `<leader>gg`   | opens lazy Git                          |
+| `a`            | stage/unstage all                       |
+| '<SPACE>'      | toggle staging for file                 |
+| `p`            | pull                                    |
+| `P`            | push                                    |
+| `c`            | commit                                  |
