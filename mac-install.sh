@@ -45,13 +45,6 @@ brew_install() {
 }
 
 create_sym_link() {
-  if ! [ -x "$(command -v git)" ]; then
-    echo 'Error: git is not installed.' >&2
-    exit 1
-  fi
-
-  cd "$HOME"
-  git clone "$GITHUB_URL"
   cd "$HOME/dotfiles"
   stow tmux
   stow nvim
