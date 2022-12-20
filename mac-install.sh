@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
-echo "Hello World!"
 
 GITHUB_URL="https://github.com/omnifarter/dotfiles.git"
 
 declare -a brew_packages=(
-"stow",
-"neovim",
-"lazygit",
-"tmux",
+"stow"
+"neovim"
+"lazygit"
+"tmux"
 "ripgrep"
 "font-hack-nerd-font"
+"zig"
 )
 
 unzip-from-link() {
@@ -34,6 +34,12 @@ iterm_install() {
 }
 
 brew_install() {
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  echo '# Set PATH, MANPATH, etc., for Homebrew.' >> "$HOME/.zprofile"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "$HOME/.zprofile"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+
   brew tap homebrew/cask
   brew tap homebrew/cask-fonts
   brew update
