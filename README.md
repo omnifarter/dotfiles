@@ -67,7 +67,7 @@ stow nvim
 | -------------- | --------------------------------------- |
 | `<leader>gg`   | opens lazy Git                          |
 | `a`            | stage/unstage all                       |
-| '<SPACE>'      | toggle staging for file                 |
+| `<SPACE>`      | toggle staging for file                 |
 | `p`            | pull                                    |
 | `P`            | push                                    |
 | `c`            | commit                                  |
