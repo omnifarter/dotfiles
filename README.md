@@ -5,6 +5,7 @@
 1. Neovim
 2. Patched Fonts
 3. Lazy Git
+4. RipGrep
 
 ## Mappings
 
