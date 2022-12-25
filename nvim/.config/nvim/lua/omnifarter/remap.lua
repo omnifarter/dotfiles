@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
--- Ctrl + Arrow moves between windows
+-- Ctrl + Arrow moves between 
 vim.keymap.set("n", "<C-Left>", "<C-W>h")
 vim.keymap.set("n", "<C-Right>", "<C-W>l")
 vim.keymap.set("n", "<C-Up>", "<C-W>k")
@@ -23,3 +23,6 @@ vim.keymap.set("n", "<S-h>", ":vsplit<CR>")
 
 --LazyGit
 vim.keymap.set("n","<leader>gg",":LazyGit<CR>")
+
+--Toggle alt file
+vim.keymap.set("n","leader>af",":b#<CR>")
