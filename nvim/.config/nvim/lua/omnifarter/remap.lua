@@ -25,4 +25,7 @@ vim.keymap.set("n", "<S-h>", ":vsplit<CR>")
 vim.keymap.set("n","<leader>gg",":LazyGit<CR>")
 
 --Toggle alt file
-vim.keymap.set("n","leader>af",":b#<CR>")
+vim.keymap.set("n","<leader>af",":b#<CR>")
+
+vim.keymap.set("n","<C-d>","<C-d>zz")
+vim.keymap.set("n","<C-u>","<C-u>zz")
