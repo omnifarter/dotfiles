@@ -97,6 +97,7 @@ return require('packer').startup(function(use)
 
   use('dhruvasagar/vim-table-mode')
   use('norcalli/nvim-colorizer.lua')
+  use('tpope/vim-abolish')
   if packer_bootstrap then
     require('packer').sync()
   end
