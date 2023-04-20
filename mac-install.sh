@@ -62,21 +62,20 @@ create_sym_link() {
 }
 
 install_spotify_tui {
-while true; do
-    read -p "Do you want to install Spotify TUI? " yn
-    case $yn in
-        [Yy]* ) break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-    brew install spotify-tui
-    spt
-done
-
+  while true; do
+      read -p "Do you want to install Spotify TUI? " yn
+      case $yn in
+          [Yy]* ) break;;
+          [Nn]* ) exit;;
+          * ) echo "Please answer yes or no.";;
+      esac
+  done
+  brew install spotify-tui
+  spt
 }
-zsh_install
-iterm_install
-brew_install
-tpm_install
-create_sym_link
+# zsh_install
+# iterm_install
+# brew_install
+# tpm_install
+# create_sym_link
 install_spotify_tui
