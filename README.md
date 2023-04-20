@@ -50,7 +50,7 @@ stow nvim
 | `>`            | indent (visual mode)                    |
 | `<`            | remove indent (visual mode)             |
 | `=`            | auto-tab (visual mode)                  |
-| `ca`           | code action                             |
+| `<leader>ca`   | code action                             |
 
 
 #### File explorer (Nvim-Tree)
