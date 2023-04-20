@@ -42,7 +42,7 @@ stow nvim
 | -------------- | --------------------------------------- |
 | `<leader>gd`   | Go to definition                        |
 | `gl`           | Go to lint                              |
-| `K`            | Hover                                   |
+| `gh`           | Hover                                   |
 | `gcc`          | comment code line (normal mode)         |
 | `gbc`          | block comment code line (normal mode)   |
 | `gb`           | block comment (visual mode)             |
@@ -50,6 +50,7 @@ stow nvim
 | `>`            | indent (visual mode)                    |
 | `<`            | remove indent (visual mode)             |
 | `=`            | auto-tab (visual mode)                  |
+| `ca`           | code action                             |
 
 
 #### File explorer (Nvim-Tree)
