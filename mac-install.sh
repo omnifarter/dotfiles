@@ -59,6 +59,7 @@ create_sym_link() {
   stow tmux
   stow nvim
   stow zsh
+  ln -s "./.ideavimrc" "~/.ideavimrc"
 }
 
 install_spotify_tui {
