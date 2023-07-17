@@ -4,6 +4,8 @@ let mapleader = " "
 """ Plugins ----
 set surround " vim-surround plugin
 
+""" Others ---
+set relativenumber
 """ Mappings ----
 
 """ Ctrl + Arrow moves between 
@@ -43,3 +45,4 @@ map <leader>ff <Action>(FindInPath)
 map gh <Action>(QuickJavaDoc)
 map gl <Action>(ShowErrorDescription)
 map <leader>ca <Action>(ShowIntentionActions)
+
