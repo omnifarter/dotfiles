@@ -2,8 +2,6 @@
 
 This repository contains all my dotfiles that I use for my workflow.
 
-![screenshot](./assets/screenshot.png)
-
 ## Installation
 
 #### Recommended Install
@@ -14,19 +12,9 @@ Use the corresponding .sh scripts for a straightforward installation.
 
 Download and configure the following tools:
 
-1. Neovim
-2. Patched Fonts
-3. Lazy Git
-4. RipGrep
-5. zig
-6. tmux
+1. Patched Fonts
+2. tmux
 
-use `stow` to create sym links for nvim, tmux and zsh.
-Example usage:
-
-```
-stow nvim
-```
 
 ## Cheatsheet
 
