@@ -28,9 +28,6 @@ nmap <S-l> :vsplit<CR>
 nmap <S-h> :vsplit<CR>
 
 
-""" Toggle alt file
-map <leader>af :b#<CR>
-
 map <C-d> <C-d>zz
 map <C-u> <C-u>zz
 
@@ -38,8 +35,4 @@ map <C-u> <C-u>zz
 map <leader>y \"+Y
 
 """ find files
-map <leader>ff <Action>(FindInPath)
-
-map gh <Action>(QuickJavaDoc)
-map gl <Action>(ShowErrorDescription)
 map <leader>ca <Action>(ShowIntentionActions)

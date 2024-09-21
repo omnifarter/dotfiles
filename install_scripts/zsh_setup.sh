@@ -9,13 +9,9 @@ else
     exit 1
 fi
 
-echo '[INFO] stowing zsh'
-
-stow zsh
-
 echo '[INFO] adding custom conf'
 
-SOURCE_LINE="source ~/.zsh/custom.conf/custom.zsh"
+SOURCE_LINE="source ~/dotfiles/zsh/custom.conf/custom.zsh"
 
 # Check if the line is already in .zshrc
 if grep -Fxq "$SOURCE_LINE" ~/.zshrc; then
@@ -25,7 +21,5 @@ else
     echo "$SOURCE_LINE" >> ~/.zshrc
     echo "Sourced custom.zsh in .zshrc."
 fi
-
-source .zshrc
 
 echo '[INFO] zsh setup complete'

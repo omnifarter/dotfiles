@@ -11,7 +11,7 @@ declare -a brew_packages=(
 )
 
 ./install_scripts/brew_setup.sh
-./install_scripts/common.sh
+source ./install_scripts/common.sh
 ./install_scripts/zsh_setup.sh
 ./install_scripts/iterm_setup.sh
 ./install_scripts/tmux_setup.sh

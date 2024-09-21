@@ -1,6 +1,5 @@
 #/bin/bash
-
-unzip-from-link() {
+function unzip_from_link() {
  local download_link=$1; shift || return 1
  local temporary_dir
 
@@ -12,6 +11,9 @@ unzip-from-link() {
  && rm -rf $temporary_dir
 }
 
-is_installed() {
+function is_installed() {
     command -v $1 >/dev/null 2>&1
 }
+
+export -f unzip_from_link
+export -f is_installed
