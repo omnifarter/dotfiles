@@ -1,4 +1,13 @@
-#/bin/bash
+#!/bin/bash
+
+declare -a brew_packages=(
+"dpkg"
+"zsh"
+"tmux"
+"font-hack-nerd-font"
+"visual-studio-code"
+"stow"
+)
 
 echo '[INFO] Installing brew...'
 
@@ -9,8 +18,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo '[INFO] installing cask...'
 
-brew tap homebrew/cask
-brew tap homebrew/cask-fonts
 brew update
 
 echo '[INFO] installing required packages...'
