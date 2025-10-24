@@ -7,6 +7,8 @@ declare -a brew_packages=(
 "font-hack-nerd-font"
 "visual-studio-code"
 "stow"
+"zoxide"
+"fzf"
 )
 
 echo '[INFO] Installing brew...'
