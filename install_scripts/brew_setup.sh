@@ -9,6 +9,7 @@ declare -a brew_packages=(
 "stow"
 "zoxide"
 "fzf"
+"neovim"
 )
 
 echo '[INFO] Installing brew...'

@@ -6,3 +6,4 @@ source ./install_scripts/common.sh
 ./install_scripts/zsh_setup.sh
 ./install_scripts/iterm_setup.sh
 ./install_scripts/tmux_setup.sh
+./install_scripts/nvim_setup.sh
